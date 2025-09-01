@@ -11,5 +11,13 @@
     {%else%}
     <h1>Hello, World!</h1>
     {%endif%}
+    <ol>
+        {% for product in products %}
+            {% comment %} <li>{{product.id}} - {{ product.name }} - {{ product.price }}</li> {% endcomment %}
+
+        {% endfor %}
+            <li>{{products}}</li>    
+
+    </ol>
 </body>
 </html> 
